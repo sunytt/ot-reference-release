@@ -126,7 +126,7 @@ main()
 
     # Mount /etc/resolv.conf
     if [ -f "/etc/resolv.conf" ]; then
-        sudo mount -o ro,bind /etc/resolv.conf "$QEMU_ROOT"/etc/resolv.conf
+        sudo mount -o rw,bind /etc/resolv.conf "$QEMU_ROOT"/etc/resolv.conf
     fi
 
     # Start RPi QEMU machine
